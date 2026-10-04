@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ziad El-Dery | الموقع قيد التطوير</title>
+<meta name="description" content="موقع Ziad El-Dery قيد التطوير حاليًا. نجهّز تجربة رقمية أكثر تميزًا وابتكارًا.">
+<meta name="theme-color" content="#0B0B0B">
+<meta property="og:title" content="Ziad El-Dery | قيد التطوير">
+<meta property="og:description" content="Something extraordinary is coming.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--c:#0B0B0B;--d:#141414;--g:#1C1C1C;--w:#F4F1EA;--gold:#B59B73;--mg:#806C4E;--gr:#858585;
+--ar:'Alexandria','Tajawal',system-ui,sans-serif;--en:'Space Grotesk',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--c);color:var(--w);font-family:var(--ar);overflow-x:hidden;min-height:100dvh;-webkit-tap-highlight-color:transparent}
+.bg{position:fixed;inset:0;z-index:0;background:radial-gradient(70% 45% at 50% 18%,rgba(181,155,115,.20),transparent 70%),linear-gradient(#0B0B0B,#111 60%,#0B0B0B);pointer-events:none}
+.bg::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(181,155,115,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(181,155,115,.05) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent);mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent)}
+.bg::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.75))}
+#fx{position:fixed;inset:0;z-index:0;width:100%;height:100%;pointer-events:none}
+main{position:relative;z-index:1;min-height:100dvh;display:flex;flex-direction:column;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 14px) 18px calc(env(safe-area-inset-bottom,0px) + 18px);max-width:520px;margin:0 auto}
+header{width:100%;display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;position:relative}
+header::after{content:"";position:absolute;bottom:0;right:0;height:1px;width:100%;background:linear-gradient(90deg,transparent,var(--gold),transparent);background-size:200% 100%;animation:sweep 5s linear infinite}
+@keyframes sweep{to{background-position:-200% 0}}
+.logo{font-family:var(--en);font-weight:700;font-size:1.5rem;letter-spacing:.04em;direction:ltr}
+.logo i{color:var(--gold);font-style:normal}
+.tag{font-family:var(--en);font-size:.68rem;color:var(--gr);letter-spacing:.18em;direction:ltr}
+.err{font-family:var(--en);font-weight:700;direction:ltr;font-size:clamp(5.6rem,30vw,9.5rem);line-height:1;margin-top:10px;letter-spacing:-.02em;background:linear-gradient(100deg,#806C4E 0%,#E3D3B0 35%,#B59B73 50%,#806C4E 75%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 #5c4c35) drop-shadow(0 2px 0 #4f4130) drop-shadow(0 3px 0 #41352a) drop-shadow(0 4px 0 #342a21) drop-shadow(0 14px 14px rgba(0,0,0,.7));animation:shine 7s ease-in-out infinite,bob 6s ease-in-out infinite;transform:perspective(600px) rotateX(10deg)}
+@keyframes shine{50%{background-position:100% 0}}
+@keyframes bob{50%{translate:0 -6px}}
+h1{font-weight:800;font-size:clamp(1.55rem,7.4vw,2.2rem);line-height:1.35;text-align:center;margin-top:6px}
+.lead{color:#cfcabf;text-align:center;font-size:clamp(.88rem,3.7vw,1rem);line-height:1.9;margin-top:8px;max-width:34ch}
+.en{font-family:var(--en);direction:ltr;font-size:.7rem;letter-spacing:.24em;color:var(--gold);margin-top:12px;text-align:center}
+.scene{width:100%;max-width:340px;margin:8px auto 0}
+.scene svg{width:100%;height:auto;display:block;overflow:visible}
+.gear{transform-box:fill-box;transform-origin:center;animation:spin 40s linear infinite}
+.gear.r{animation-direction:reverse;animation-duration:26s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.wrench{transform-box:fill-box;transform-origin:50% 100%;animation:swing 3.2s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(12deg)}}
+.w1{animation:bob 5s ease-in-out infinite}.w2{animation:bob 6.5s ease-in-out infinite reverse}
+.spark{animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.1}50%{opacity:1}}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;margin-top:14px;direction:rtl}
+.cd div{background:var(--g);border:1px solid rgba(181,155,115,.35);border-radius:14px;padding:12px 2px 9px;text-align:center}
+.cd b{display:block;font-family:var(--en);font-weight:700;font-size:clamp(1.5rem,8vw,2.1rem);font-variant-numeric:tabular-nums;color:var(--w);line-height:1.1}
+.cd b.f{animation:flip .45s ease}
+@keyframes flip{from{opacity:0;transform:rotateX(70deg) translateY(-6px)}}
+.cd span{font-size:.7rem;color:var(--gr)}
+.fun{text-align:center;color:var(--gold);font-weight:500;font-size:clamp(.9rem,3.8vw,1.02rem);line-height:1.9;margin-top:12px}
+.note{font-size:.7rem;color:var(--gr);text-align:center;margin-top:8px;line-height:1.7}
+#done{display:none;color:var(--gold);text-align:center;margin-top:10px;font-weight:500}
+.act{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px;width:100%}
+button,a.btn{font:inherit;font-size:.88rem;min-height:46px;min-width:44px;padding:0 20px;border-radius:999px;border:1px solid rgba(181,155,115,.5);background:transparent;color:var(--w);cursor:pointer;transition:transform .15s,background .2s,border-color .2s}
+a.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+button:active,a.btn:active{transform:scale(.95)}
+button.p{background:linear-gradient(135deg,#C9B38A,#9a845f);color:#0B0B0B;border-color:transparent;font-weight:800}
+button:hover,a.btn:hover{border-color:var(--gold);background:rgba(181,155,115,.1)}button.p:hover{background:linear-gradient(135deg,#d6c29b,#a99068)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+footer{margin-top:auto;padding-top:26px;text-align:center;width:100%}
+footer small{color:var(--gr);font-size:.78rem}
+.sig{display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0}
+.sig strong{font-weight:800;font-size:1.45rem;color:var(--gold)}
+.sig u{display:block;width:44px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));background-size:200% 100%;animation:sweep 3s linear infinite}
+.sig u:last-child{transform:scaleX(-1)}
+footer code{font-family:var(--en);font-size:.62rem;letter-spacing:.2em;color:var(--mg)}
+#intro{position:fixed;inset:0;z-index:50;background:var(--c);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+#intro .ln{width:1px;height:0;background:var(--gold)}
+#intro .zd{font-family:var(--en);font-weight:700;font-size:3.4rem;color:var(--w);direction:ltr;clip-path:inset(0 100% 0 0);opacity:0}
+#intro .zd i{color:var(--gold);font-style:normal}
+#intro button{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);font-size:.8rem}
+.wd{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.12em}.wd>span{display:inline-block;will-change:transform}
+.rev{opacity:0;transform:translateY(12px)}
+.swal2-popup.zd-pop{background:#141414;color:#F4F1EA;border:1px solid rgba(181,155,115,.4);border-radius:22px;font-family:var(--ar);box-shadow:0 24px 60px rgba(0,0,0,.7);width:min(92vw,25em)}
+.zd-pop .swal2-title{color:#F4F1EA;font-size:1.3rem;font-weight:800}.zd-pop .swal2-html-container{color:#cfcabf;line-height:1.9;font-size:.92rem}
+.zd-pop .swal2-styled{border-radius:999px;font-family:var(--ar);min-height:44px}
+.zd-pop .swal2-confirm{background:#B59B73!important;color:#0B0B0B!important;font-weight:800}
+.zd-pop .swal2-cancel{background:transparent!important;border:1px solid rgba(181,155,115,.5)!important;color:#F4F1EA!important}
+@media(min-width:768px){main{max-width:560px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div id="intro" role="dialog" aria-label="مقدمة الصفحة">
+  <div class="ln"></div><div class="zd">ZD<i>.</i></div>
+  <button id="skip" type="button">تخطي المقدمة</button>
+</div>
+
+<main>
+  <header>
+    <div class="logo" aria-label="Ziad El-Dery">ZD<i>.</i></div>
+    <div class="tag">DIGITAL EXPERIENCE / 2026</div>
+  </header>
+
+  <div class="err rev" role="img" aria-label="خطأ 404">404</div>
+
+  <div class="scene rev" aria-hidden="true">
+    <svg viewBox="0 0 340 230">
+      <defs>
+        <linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E3D3B0"/><stop offset="1" stop-color="#806C4E"/></linearGradient>
+        <radialGradient id="lg" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#B59B73" stop-opacity=".28"/><stop offset="1" stop-color="#B59B73" stop-opacity="0"/></radialGradient>
+      </defs>
+      <ellipse cx="170" cy="110" rx="170" ry="110" fill="url(#lg)"/>
+      <g class="gear" style="transform-origin:262px 80px"><circle cx="262" cy="80" r="52" fill="none" stroke="#2a2620" stroke-width="16" stroke-dasharray="11 7.9"/><circle cx="262" cy="80" r="44" fill="#1C1C1C" stroke="url(#gd)" stroke-width="5"/><circle cx="262" cy="80" r="14" fill="#0B0B0B" stroke="#B59B73" stroke-width="2"/></g>
+      <g class="gear r" style="transform-origin:78px 56px"><circle cx="78" cy="56" r="30" fill="none" stroke="#2a2620" stroke-width="10" stroke-dasharray="8 5.6"/><circle cx="78" cy="56" r="25" fill="#1C1C1C" stroke="#806C4E" stroke-width="3"/><circle cx="78" cy="56" r="7" fill="#0B0B0B"/></g>
+      <g class="w1">
+        <path d="M92 196v-62a22 22 0 0144 0v62z" fill="#141414" stroke="#2c2c2c"/>
+        <rect x="92" y="150" width="44" height="6" fill="url(#gd)"/>
+        <circle cx="114" cy="108" r="17" fill="#d9c3a0"/>
+        <path d="M96 106a18 18 0 0136 0z" fill="url(#gd)"/><rect x="94" y="104" width="40" height="5" rx="2" fill="#806C4E"/>
+        <path d="M136 140l34-22" stroke="#141414" stroke-width="12" stroke-linecap="round"/>
+        <g class="wrench"><rect x="166" y="76" width="9" height="48" rx="4" fill="url(#gd)"/><circle cx="170" cy="74" r="10" fill="none" stroke="url(#gd)" stroke-width="6" stroke-dasharray="46 10"/></g>
+      </g>
+      <g class="w2">
+        <path d="M210 196v-50a18 18 0 0136 0v50z" fill="#141414" stroke="#2c2c2c"/>
+        <rect x="210" y="160" width="36" height="5" fill="url(#gd)"/>
+        <circle cx="228" cy="126" r="14" fill="#c9b08c"/>
+        <path d="M213 124a15 15 0 0130 0z" fill="url(#gd)"/><rect x="211" y="122" width="34" height="4" rx="2" fill="#806C4E"/>
+        <path d="M212 158l-24 8" stroke="#141414" stroke-width="10" stroke-linecap="round"/>
+        <rect x="170" y="160" width="26" height="16" rx="3" fill="#1C1C1C" stroke="url(#gd)"/>
+      </g>
+      <rect x="40" y="196" width="260" height="10" rx="3" fill="#1C1C1C" stroke="#806C4E"/>
+      <rect x="56" y="206" width="228" height="4" fill="#0B0B0B"/>
+      <g fill="#E3D3B0"><circle class="spark" cx="182" cy="92" r="2"/><circle class="spark" cx="196" cy="84" r="1.5" style="animation-delay:.8s"/><circle class="spark" cx="188" cy="102" r="1.5" style="animation-delay:1.5s"/></g>
+    </svg>
+  </div>
+
+  <h1 class="rev">عذرًا، الموقع قيد التطوير</h1>
+  <p class="lead rev">تعمل الجهات الإدارية والمختصة بالتطوير على تجهيز هذا الموقع، لنقدم لكم تجربة رقمية أكثر تميزًا وابتكارًا.</p>
+  <div class="en rev">SOMETHING EXTRAORDINARY IS COMING</div>
+  <p class="fun rev">بنحضّر عظمة في الأبديت الجاي 🔥<br>اصبروا علينا بقى.. مش إنتو اللي وقّعتوا القديم 😅</p>
+
+  <section class="rev" style="width:100%" aria-label="العد التنازلي">
+    <div class="cd" role="timer" aria-live="off">
+      <div><b id="d">04</b><span>يوم</span></div>
+      <div><b id="h">00</b><span>ساعة</span></div>
+      <div><b id="m">00</b><span>دقيقة</span></div>
+      <div><b id="s">00</b><span>ثانية</span></div>
+    </div>
+    <p id="done" role="status">نقترب من اكتمال التجهيز، ترقبوا إطلاق الموقع قريبًا.</p>
+    <p class="note">هذا العداد محلي على جهازك، ولا يمثل موعد إطلاق موحدًا لجميع الزوار.</p>
+  </section>
+
+  <div class="act rev">
+    <button class="p" id="bDetails" type="button">تفاصيل الصيانة</button>
+    <a id="bContact" class="btn" href="https://wa.me/201023448366" target="_blank" rel="noopener">التواصل واتساب</a>
+    <button id="bSuggest" type="button">اقتراح تطوير</button>
+    <button id="bHome" type="button" hidden>الصفحة الرئيسية</button>
+  </div>
+
+  <footer class="rev">
+    <small>قيد التطوير بواسطة</small>
+    <div class="sig"><u></u><strong>زياد الدري</strong><u></u></div>
+    <code>DESIGNED &amp; DEVELOPED BY ZIAD EL-DERY</code>
+  </footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.14.5/sweetalert2.all.min.js"></script>
+<script>
+(function(){
+'use strict';
+/* ===== الإعدادات: غيّر القيم هنا فقط ===== */
+var CONFIG={
+  countdownMs:4*24*60*60*1000,   /* مدة العداد من أول زيارة */
+  fixedEndTimestamp:null,        /* مثال: Date.UTC(2026,9,10) للانتقال لموعد موحد */
+  homeUrl:'',                    /* ضع رابطًا صالحًا لإظهار زر الصفحة الرئيسية */
+  contact:{'واتساب':'01023448366'}
+};
+var $=function(s){return document.querySelector(s)};
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var hasG=typeof gsap!=='undefined', hasS=typeof Swal!=='undefined';
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function sess(k,v){try{if(v===undefined)return sessionStorage.getItem(k);sessionStorage.setItem(k,v)}catch(e){return null}}
+
+/* ===== العداد ===== */
+var end=CONFIG.fixedEndTimestamp||parseInt(store('zd_end'),10);
+if(!end||isNaN(end)){end=Date.now()+CONFIG.countdownMs;if(!CONFIG.fixedEndTimestamp)store('zd_end',String(end))}
+var els={d:$('#d'),h:$('#h'),m:$('#m'),s:$('#s')};
+function pad(n){return n<10?'0'+n:''+n}
+function set(el,v){if(el.textContent!==v){el.textContent=v;if(!reduce){el.classList.remove('f');void el.offsetWidth;el.classList.add('f')}}}
+function tick(){
+  var t=Math.max(0,end-Date.now()),x=Math.floor(t/1000);
+  set(els.d,pad(Math.floor(x/86400)));set(els.h,pad(Math.floor(x%86400/3600)));
+  set(els.m,pad(Math.floor(x%3600/60)));set(els.s,pad(x%60));
+  if(t===0){$('#done').style.display='block';clearInterval(timer)}
+}
+var timer=setInterval(tick,1000);tick();
+
+/* ===== الحوارات (SweetAlert2 مع بديل أصلي) ===== */
+var base={customClass:{popup:'zd-pop'},buttonsStyling:true,confirmButtonText:'حسنًا',showClass:{popup:'swal2-show'},heightAuto:false};
+function alertBox(title,html,text){
+  if(hasS)return Swal.fire(Object.assign({},base,{title:title,html:html}));
+  alert(title+'\n'+text);return Promise.resolve();
+}
+function ask(title,text,yes){
+  if(hasS)return Swal.fire(Object.assign({},base,{title:title,text:text,showCancelButton:true,confirmButtonText:yes,cancelButtonText:'إلغاء',reverseButtons:true})).then(function(r){return r.isConfirmed});
+  return Promise.resolve(confirm(title+'\n'+text));
+}
+$('#bDetails').onclick=function(){alertBox('حالة الموقع','بنحضّر عظمة في الأبديت الجاي 🔥<br>اصبروا علينا بقى.. مش إنتو اللي وقّعتوا القديم 😅<br>هنعلن عن الإطلاق أول ما نخلّص.','بنحضّر عظمة في الأبديت الجاي. اصبروا علينا بقى.')};
+var NUM=CONFIG.contact['واتساب'],WA='https://wa.me/2'+NUM.slice(1);
+$('#bContact').href=WA;
+function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+$('#bSuggest').onclick=function(){
+  var head='اقتراح تطوير للموقع (يفيد الدفعة):\n';
+  var html='<textarea id="sg" class="swal2-textarea" style="margin:8px 0;width:100%;background:#1C1C1C;color:#F4F1EA;border-color:rgba(181,155,115,.4)" maxlength="600" rows="4" aria-label="اقتراحك" placeholder="اكتب اقتراحك هنا..."></textarea>'
+   +'<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><a id="sgGo" class="swal2-styled swal2-confirm" style="text-decoration:none;display:inline-flex;align-items:center" href="'+WA+'" target="_blank" rel="noopener">فتح واتساب وإرسال</a><button id="sgCp" type="button" class="swal2-styled swal2-cancel" style="display:inline-block">نسخ الرسالة</button></div>'
+   +'<div style="font-size:.78rem;color:#858585;margin-top:10px">لو الواتساب مافتحش، انسخ الرسالة وابعتها على <span dir="ltr">'+NUM+'</span></div>';
+  function open2(){
+    var ta=document.getElementById('sg'),go=document.getElementById('sgGo'),cp=document.getElementById('sgCp');
+    ta.focus();
+    ta.addEventListener('input',function(){go.href=WA+'?text='+encodeURIComponent(head+ta.value.trim())});
+    go.addEventListener('click',function(e){if(!ta.value.trim()){e.preventDefault();Swal.showValidationMessage('اكتب الاقتراح الأول')}});
+    cp.addEventListener('click',function(){
+      if(!ta.value.trim()){Swal.showValidationMessage('اكتب الاقتراح الأول');return}
+      var txt=head+ta.value.trim();
+      (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){cp.textContent='تم النسخ'},function(){ta.select();cp.textContent='حدد النص وانسخه'});
+    });
+  }
+  if(!hasS){var t=prompt('اكتب اقتراحك لتطوير الموقع');if(t)location.href=WA+'?text='+encodeURIComponent(head+t.trim());return}
+  Swal.fire(Object.assign({},base,{title:'اقتراح تطوير',html:html,showConfirmButton:false,showCancelButton:true,cancelButtonText:'إغلاق',didOpen:open2}));
+};
+if(/^https?:\/\//.test(CONFIG.homeUrl)){var bh=$('#bHome');bh.hidden=false;bh.onclick=function(){ask('العودة للصفحة الرئيسية','سيتم نقلك إلى الصفحة الرئيسية.','متابعة').then(function(ok){if(ok)location.href=CONFIG.homeUrl})}}
+
+/* ===== المقدمة والظهور ===== */
+var intro=$('#intro'),revs=document.querySelectorAll('.rev');
+function showAll(){if(shown)return;shown=true;intro.style.display='none';if(hasG&&!reduce){gsap.fromTo(revs,{opacity:0,y:12},{opacity:1,y:0,duration:.6,stagger:.08,ease:'power2.out',clearProps:'transform'});if(split.length)gsap.to(split,{yPercent:0,opacity:1,duration:.75,ease:'power3.out',stagger:{each:.05},delay:.25})}else{revs.forEach(function(e){e.style.opacity=1;e.style.transform='none'})}}
+/* تقسيم النص إلى كلمات (الكلمات لا الحروف، حفاظًا على اتصال الحروف العربية) */
+var split=[];
+if(hasG&&!reduce){document.querySelectorAll('h1,.lead,.en,.fun').forEach(function(el){
+  Array.prototype.slice.call(el.childNodes).forEach(function(n){
+    if(n.nodeType!==3)return;
+    var f=document.createDocumentFragment();
+    n.textContent.split(/\s+/).filter(Boolean).forEach(function(w,i){
+      if(i)f.appendChild(document.createTextNode(' '));
+      var o=document.createElement('span');o.className='wd';var q=document.createElement('span');q.textContent=w;o.appendChild(q);f.appendChild(o);
+    });
+    el.replaceChild(f,n);
+  });
+});split=document.querySelectorAll('.wd>span');gsap.set(split,{yPercent:115,opacity:0})}
+var shown=false;
+var tl=null;
+function runIntro(force){
+  if(reduce||!hasG){sess('zd_seen','1');showAll();return}
+  if(!force&&sess('zd_seen')){showAll();return}
+  intro.style.display='flex';gsap.set(revs,{opacity:0,y:12});
+  if(tl)tl.kill();
+  tl=gsap.timeline({onComplete:function(){sess('zd_seen','1');gsap.to(intro,{opacity:0,duration:.5,onComplete:function(){gsap.set(intro,{opacity:1});showAll()}})}});
+  tl.set('#intro .zd',{opacity:1,clipPath:'inset(0 100% 0 0)'}).fromTo('#intro .ln',{height:0},{height:90,duration:.6,ease:'power2.inOut'})
+    .to('#intro .zd',{clipPath:'inset(0 0% 0 0)',duration:.6,ease:'power3.out'},'-=.1').to('#intro',{duration:.5});
+}
+$('#skip').onclick=function(){if(tl)tl.kill();sess('zd_seen','1');showAll()};
+runIntro(false);
+
+/* ===== جزيئات خفيفة ===== */
+var cv=$('#fx'),cx=cv.getContext('2d'),P=[],raf=0,W,H;
+function size(){var r=Math.min(devicePixelRatio||1,2);W=cv.width=innerWidth*r;H=cv.height=innerHeight*r}
+function init(){size();P=[];var n=innerWidth<600?22:40;for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:(Math.random()*1.4+.4)*(devicePixelRatio||1),v:Math.random()*.25+.08,a:Math.random()*.5+.15})}
+function draw(){cx.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.y-=p.v;if(p.y<-4){p.y=H+4;p.x=Math.random()*W}cx.fillStyle='rgba(181,155,115,'+p.a+')';cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fill()}raf=requestAnimationFrame(draw)}
+init();
+if(!reduce)draw();else{P.forEach(function(){});cx.clearRect(0,0,W,H)}
+addEventListener('resize',function(){init()});
+document.addEventListener('visibilitychange',function(){if(reduce)return;if(document.hidden)cancelAnimationFrame(raf);else draw()});
+})();
+</script>
+</body>
+</html>
